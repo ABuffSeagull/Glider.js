@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
   <head>
+	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <style type="text/css">@-ms-viewport{width:auto!important;}</style>
     <link rel="stylesheet" type="text/css" href="glider.css" />
     <script src="glider.js"></script>
+    <script type="module" src="index.js"></script>
     <script>
       window.addEventListener('load',function(){
         document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
@@ -124,5 +126,20 @@
         <button class="glider-next">&raquo;</button>
         <div id="dots"></div>
     </div>
+
+	<div class="glider-contain">
+        <glider-element item-width="150">
+            <img src="https://via.placeholder.com/300?text=Test0" />
+            <img src="https://via.placeholder.com/300?text=Test1" />
+            <img src="https://via.placeholder.com/300?text=Test2" />
+            <img src="https://via.placeholder.com/300?text=Test3" />
+            <img src="https://via.placeholder.com/300?text=Test4" />
+            <img src="https://via.placeholder.com/300?text=Test5" />
+            <img src="https://via.placeholder.com/300?text=Test6" />
+            <img src="https://via.placeholder.com/300?text=Test7" />
+            <img src="https://via.placeholder.com/300?text=Test8" />
+            <img src="https://via.placeholder.com/300?text=Test9" />
+        </glider-element>
+	</div>
   </body>
 </html>
