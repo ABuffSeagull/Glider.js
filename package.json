@@ -27,31 +27,10 @@
   },
   "homepage": "https://github.com/NickPiscitelli/Glider.js#readme",
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "husky": "1.2.0",
-    "lint-staged": "8.1.0",
+    "cssnano": "^5.1.7",
+    "htmlnano": "^2.0.2",
+    "postcss-cli": "^9.1.0",
     "prettier": "1.15.2",
-    "standard": "12.0.1",
-    "uglify-js": "^3.4.9",
     "vite": "^2.5.10"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "linters": {
-      "glider.js": [
-        "prettier --write",
-        "standard --fix",
-        "uglifyjs --compress --mangle --comments -o glider.min.js --",
-        "uglifyjs --compress --mangle --comments -o docs/assets/js/glider.min.js --",
-        "git add glider.min.js docs/assets/js/glider.min.js"
-      ]
-    },
-    "ignore": [
-      "*.min.js"
-    ]
   }
 }
